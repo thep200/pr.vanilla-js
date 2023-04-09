@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js events</title>
+</head>
+<body onload="testOnload()">
+    <div id="outer" style="height: 100px; width: 100px; background: #ff0000;">
+        <div id="inner" style="height: 90px; width: 90px; background: #c94747;"></div>
+    </div>
+
+    <div id="foo"></div>
+    <input type="text" id="input1" onkeyup="keyupevent()"/>
+    <h2 ondblclick="foo()" id="foo1">double click me</h2>
+
+    <button onclick="fooHandle()" >add-text</button>
+</body>
+<script type="text/javascript">
+    function fooHandle () {
+        document.getElementById('foo').innerHTML = 'Tao da them thang nay vao day';
+    }
+
+    function keydownevent () {
+        alert('keydown');
+    }
+    function keyupevent () {
+        alert('keyup');
+    }
+
+    function foo() {
+        alert('dbclick');
+    }
+
+    function testOnload () {
+        alert('onload');
+    }
+
+    window.onload = () => alert('window onload');
+
+    // Capturing
+    document.getElementById('outer').addEventListener('click', () => alert('outer'), true);
+    document.getElementById('inner').addEventListener('click', () => alert('inner'), true);
+
+    // Bubbling
+    document.getElementById('outer').addEventListener('click', () => alert('outer'), true);
+    document.getElementById('inner').addEventListener('click', () => alert('inner'), true);
+
+</script>
+</html>
