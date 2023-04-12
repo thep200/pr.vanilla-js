@@ -1,6 +1,33 @@
 # HTML
+HTML là viết tắt của "HyperText Markup Language" (ngôn ngữ đánh dấu siêu văn bản), là một ngôn ngữ lập trình đơn giản được sử dụng để xây dựng các trang web và ứng dụng web.
+- HTML không có một tác giả cụ thể. Được công bố và duy trì bởi Tổ chức World Wide Web Consortium (W3C), tổ chức phi lợi nhuận chuyên về việc phát triển các tiêu chuẩn web
+- Phiên bản mới nhất của HTML hiện nay là HTML5, được công bố vào năm 2014.
+- HTML không phải là một open source.
+- Có, có nhiều ngôn ngữ đánh dấu siêu văn bản khác tương tự như HTML, Mỗi ngôn ngữ đánh dấu siêu văn bản này có những đặc điểm riêng và được sử dụng cho các mục đích và ứng dụng khác nhau:
+    - `XML (eXtensible Markup Language)`: là một ngôn ngữ đánh dấu siêu văn bản được thiết kế cho việc truyền thông qua mạng và lưu trữ dữ liệu.
+    - `XHTML (Extensible HyperText Markup Language)`: là sự kết hợp của HTML và XML, nhằm tăng tính năng và khả năng mở rộng của HTML.
+    - `Markdown`: là một ngôn ngữ đánh dấu siêu văn bản đơn giản, dễ hiểu và dễ viết, thường được sử dụng để tạo ra các tài liệu như README, tài liệu API và các bài viết trên blog.
+    - `BBCode (Bulletin Board Code)`: là một ngôn ngữ đánh dấu siêu văn bản được sử dụng phổ biến trong các diễn đàn trực tuyến.
 
-## 1. SEO & Semantic HTML
+## 1. HTML Style Guide
+- Luôn định nghĩa document type.
+- Tên của các element (tag) nên được viết thường (lowercase).
+- Luôn đóng các tag.
+- Tên của các thuộc tính trong các element (tag) nên được viết thường (lowercase).
+- Giá trị của các thuộc tính nên được đặt vào dấu ngoặc kép.
+- Đối với thẻ `img` luôn luôn định nghĩa các thuộc tính `alt`, `width` và `height`.
+- Không nên đặt khoảng trắng giữa các dấu bằng khi định nghĩa một thuộc tính.
+- Thêm các dòng trống hoặc khoảng trắng vào các khối HTML lớn giúp dễ đọc hơn.
+- Không bao giờ bỏ qua thẻ `<title>`
+- Chúng ta có thể bỏ qua thẻ `<head>`. Browser sẽ tự động thêm tất cả các thẻ đứng trước thẻ `<body>` vào `<head>`.
+- Nên thêm thuộc tính `lang` cho tag `<html>` để định nghĩa ngôn ngữ sử dụng của web page.
+- Luôn định nghĩa thẻ `<meta charset="charset">` để tối ưu ` SEO`.
+- `viewport` là định nghĩa phần màn hình mà người dùng có thể nhìn thấy. Nên set thẻ `<meta name="viewport" content="width=device-width, initial-scale=1.0">` để nội dung được hiển thị trên mobile phone được clear.
+- Đối với file name chúng ta luôn luôn sử dụng lowercase để đặt tên vì các server khác nhau có thể support case sensitive hoặc không.
+- Ta có thể đặt extension cho file html là `.htm` hoặc `.html`, cả hai đều sẽ được browser hiểu và đọc, tuy nhiên đối với server khi ta config file mặc định tương ứng extension nào thì phải đặt tên file extension giống như thế.
+
+
+## 2. SEO & Semantic HTML
 ### SEO (Search Engineer Optimization)
 Để tối ưu search cho các trang web, giúp tăng khả năng nhận biết website đối với các công cụ tìm kiếm hiện tại như google, bing, ...
 
