@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- viewport được định nghĩa là phần diện tích người dùng có thể nhìn thấy -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Mô tả cơ bản qua về web page -->
+    <meta content="Hướng dẫn cơ bản về semantic html và cách sử dụng">
+
+    <!-- Tiêu đề của web page -->
     <title>HTML tutorials</title>
 </head>
 <body>
+    <header>
+        <h2>Chào mừng bạn đến với web page</h2>
+        <figure>
+            <figcaption>Tiêu đề cho logo</figcaption>
+            <img src="abc.xyz" alt="semantic-tutorial-logo">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="/"></a></li>
+                <li><a href="/contact"></a></li>
+                <li><a href="/about"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1>Hướng dẫn cơ bản về semantic html.</h1>
+        </header>
 
+        <section id="content-1">
+            <h2>HTML là gì?</h2>
+            <article>
+                <h3>Tiêu đề 1</h3>
+                <p>Nội dung 1</p>
+            </article>
+            <article>
+                <h3>Tiêu đề 2</h3>
+                <p>Nội dung 2</p>
+            </article>
+        </section>
+
+        <section id="content-2">
+            <h2>Non-semantic HTML</h2>
+            <article></article>
+        </section>
+    </main>
+    <footer>
+        Bản quyền thuộc sở hữu của web page.
+    </footer>
 </body>
 </html>

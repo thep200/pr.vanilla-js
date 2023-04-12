@@ -26,8 +26,47 @@ HTML là viết tắt của "HyperText Markup Language" (ngôn ngữ đánh dấ
 - Đối với file name chúng ta luôn luôn sử dụng lowercase để đặt tên vì các server khác nhau có thể support case sensitive hoặc không.
 - Ta có thể đặt extension cho file html là `.htm` hoặc `.html`, cả hai đều sẽ được browser hiểu và đọc, tuy nhiên đối với server khi ta config file mặc định tương ứng extension nào thì phải đặt tên file extension giống như thế.
 
+## 2. HTML tag elements
+Trong HTML Tag là viết tắt của tag element, là một thành phần cơ bản để xây dựng trang web. Các tag được sử dụng để định nghĩa các cấu trúc và nội dung của một trang web bao gồm hình ảnh, liên kết, biểu mẫu, ... <br>
+`<tagname attribute="value">Content</tagname>`
+- `tagname`: tên của tag
+- `attribute`: tên của thuộc tính tag
+- `value`: giá trị của thuộc tính
+- `content`: nội dung của tag
 
-## 2. SEO & Semantic HTML
+## Phân loại
+Các loại tag trong HTML được chia ra thành nhiều loại khác nhau mỗi loại sẽ có các chức năng riêng ví dụ như:
+- Tag định nghĩa cấu trúc trang web:
+    - `<html>`, `<head>`, `<body>`, `<header>`, `<footer>`,
+    - `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<div>`,
+- Tag định nghĩa các phần tử văn bản:
+    - `<p>`
+    - `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`,
+    - `<ul>`, `<ol>`, `<li>`
+    - `<a>`, `<em>`, `<strong>`, `<i>`, `<b>`
+    - `<blockquote>`, `<q>`
+    - `<code>`
+- Tag định nghĩa các phần tử hình ảnh và media:
+    - `<img>`
+    - `<video>`, `<audio>`
+    - `<figure>`, `<figcaption>`
+- Tag định nghĩa các phần tử biểu mẫu:
+    - `<form>`
+    - `<input>`, `<textarea>`
+    - `<select>`, `<option>`
+    - `<button>`
+- Tag định nghĩa các phần tử bảng:
+    - `<table>`, `<tr>`, `<td>`, `<th>`
+    - `<thead>`, `<tbody>`, `<tfoot>`
+
+## Inline & Block
+Thẻ `Block` trong HTML được sử dụng để định dạng cấu trúc một văn bản, khi sử dụng thẻ block thì nó sẽ nằm trên một dòng mới và chiếm hết phần chiều rộng của thẻ cha. Một số thẻ block có thể kể đến như:
+- `<div>`, `<p>`, `<h1>`-`<h6>`, `<ul>`, `<ol>`, `<li>`, `<table>`, `<form>`, ...
+
+Thẻ `Inline` trong HTML được sử dụng để định dạng các phần tử trong văn bản thuộc khối block đó. Khi sử dụng thẻ inline thì nó sẽ nằm cùng một dòng và chỉ chiếm phần chiều rộng đủ để hiển thị nội dung của thẻ đó. Một số thẻ inline như:
+- `<a>`, `<span>`, `<img>`, `<input>`, `<button>`, `<label>`, ...
+
+## 3. SEO & Semantic HTML
 ### SEO (Search Engineer Optimization)
 Để tối ưu search cho các trang web, giúp tăng khả năng nhận biết website đối với các công cụ tìm kiếm hiện tại như google, bing, ...
 
@@ -66,9 +105,7 @@ Thẻ `<article>` được sử dụng để định nghĩa một nội dung đ�
 
 <article>
     <h2>Google Chrome</h2>
-    <p>
-        Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!
-    </p>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
 </article>
 
 <!-- ... -->
@@ -88,9 +125,7 @@ Thẻ `<header` thường chứa các nội dung điển hình như:
         <h1>What Does WWF Do?</h1>
         <p>WWF's mission:</p>
     </header>
-    <p>
-        WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.
-    </p>
+    <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
 </article>
 ```
 
@@ -106,9 +141,7 @@ Thẻ `<header` thường chứa các nội dung điển hình như:
 ```html
 <footer>
     <p>Author: Hege Refsnes</p>
-    <p>
-        <a href="mailto:hege@example.com">hege@example.com</a>
-    </p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
 </footer>
 ```
 
@@ -116,9 +149,9 @@ Thẻ `<header` thường chứa các nội dung điển hình như:
 Thẻ `<nav>` được sử dụng để định nghĩa một danh sách các navigations links. Các trình duyệt có thể xem xét để bỏ qua thông tin này ban đầu nhằm tăng trải nghiệm web cho người dùng mà không ảnh hưởng tới nôi dung.
 ```html
 <nav>
-    <a href="/html/">HTML</a> |
-    <a href="/css/">CSS</a> |
-    <a href="/js/">JavaScript</a> |
+    <a href="/html/">HTML</a>
+    <a href="/css/">CSS</a>
+    <a href="/js/">JavaScript</a>
     <a href="/jquery/">jQuery</a>
 </nav>
 ```
@@ -130,9 +163,7 @@ Thẻ `<aside>` chứa các nội dung không liên quan trực tiếp đến n�
 
 <aside>
     <h4>Epcot Center</h4>
-    <p>
-        Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    </p>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
 </aside>
 ```
 
@@ -152,4 +183,5 @@ Thẻ `<figure>` chứa các nội dung độc lập cho web page như hình ả
 | `<mark>` | Định nghĩa các marked/highlighted cho text |
 | `<summary>` | Định nghĩa một heading được show ra cho thẻ `<details>` |
 | `<time>` | Định nghĩa thời gian. |
-
+| `<menu>` | Được sử dụng để định nghĩa các điều hướng. (đối với các thanh điều hướng cơ bản ta thường sử dụng thẻ `ul`, `li` vì nó được hỗ trợ rộng rãi hơn) |
+| `<blockquote>` | Được sử dụng để định nghĩa một section khác được lấy từ một nguồn khác. |
