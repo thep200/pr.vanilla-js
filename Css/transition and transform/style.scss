@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+h1 {
+    color: red;
+}
+
+#transition {
+    height: 300px;
+    width: 500px;
+    transition: margin-left 2s 0.5s, background-color 0.5s;
+    background-color: rebeccapurple;
+
+    &:hover {
+        margin-left: 1900px;
+        background-color: red;
+    }
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    display: block;
+    transition: 3s;
+}
+
+.transform:hover {
+    transform: rotate(3turn);
+}
+
+.transform1:hover {
+    transform: rotate(3turn);
+    transform-origin: 100% 50%;
+}
+
+.transform2:hover {
+    transform: rotate(3turn);
+}

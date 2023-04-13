@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h1 {
+  color: red;
+}
+
+#transition {
+  height: 300px;
+  width: 500px;
+  -webkit-transition: margin-left 2s 0.5s, background-color 0.5s;
+  transition: margin-left 2s 0.5s, background-color 0.5s;
+  background-color: rebeccapurple;
+}
+
+#transition:hover {
+  margin-left: 1900px;
+  background-color: red;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  display: block;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.transform:hover {
+  -webkit-transform: rotate(3turn);
+          transform: rotate(3turn);
+}
+
+.transform1:hover {
+  -webkit-transform: rotate(3turn);
+          transform: rotate(3turn);
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+.transform2:hover {
+  -webkit-transform: rotate(3turn);
+          transform: rotate(3turn);
+}
+/*# sourceMappingURL=style.css.map */

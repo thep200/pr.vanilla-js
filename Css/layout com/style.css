@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  position: relative;
+  padding-left: 170px;
+  width: 100%;
+}
+
+#container .menu {
+  position: fixed;
+  height: 100%;
+  width: 150px;
+  background-color: black;
+  left: 0;
+}
+
+#container .menu > ul > li {
+  border-top: 1px solid #f3f3f3;
+  padding: 10px 10px;
+}
+
+#container .menu > ul > li > a {
+  padding-left: 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#container .menu > ul > li > a:hover {
+  color: red;
+}
+
+#container .content .header .logo h1 {
+  text-align: center;
+}
+
+#container .content .header .sologan {
+  background-color: #f3f3f3;
+  margin-top: 20px;
+  margin-left: 150px;
+  width: 1200px;
+  padding: 50px 50px;
+}
+
+#container .content .header .sologan h3 {
+  text-align: center;
+}
+
+#container .content .header .sologan p {
+  text-align: center;
+}
+
+#container .content .action {
+  margin-top: 20px;
+  overflow: auto;
+}
+
+#container .content .action img {
+  float: left;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+#container .content .action .col {
+  float: left;
+  width: 30%;
+}
+
+#container .content .footer {
+  margin-top: 20px;
+}
+
+#container .content .footer > p {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

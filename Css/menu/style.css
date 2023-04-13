@@ -1,0 +1,60 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* General */
+
+body {
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+/* menu */
+
+.menu ul{
+    position: relative;
+    background-color: teal;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 30px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 30px 20px;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* sub menu */
+
+#sub-menu {
+    position: absolute;
+    display: none;
+    margin: 30px 0;
+}
+
+#sub-menu li {
+    display: block;
+}
+
+#sub-menu a {
+    padding: 10px 50px;
+}
+
+.menu li:hover #sub-menu {
+    display: block;
+}
